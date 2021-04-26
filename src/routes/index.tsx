@@ -1,13 +1,12 @@
 import * as React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Router, Switch, Route } from 'react-router-dom'
 
 // router
 import { history } from './history'
 
-// const HomePage = React.lazy(() => import('../home/homePage'))
-import NavMenu from '../layout/NevMenu'
-import HomePage from '../home/homePage'
-import Profile from '../profile'
+const NavMenu = React.lazy(() => import('../layout/NevMenu'))
+const Profile = React.lazy(() => import('../profile'))
+const HomePage = React.lazy(() => import('../home/homePage'))
 
 export default () => (
   <>
