@@ -1,6 +1,8 @@
-import { url } from 'node:inspector'
 import * as React from 'react'
+import { Link } from 'react-router-dom'
+
 import myPic from '../static/images/000009.jpeg'
+
 const HomePage: React.FC<any> = () => {
   return (
     <>
@@ -10,11 +12,24 @@ const HomePage: React.FC<any> = () => {
           <div className="absolute z-30 flex w-full h-full">
             <div className="relative flex items-stretch z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2">
               <div className="self-center mx-4">
-                <h1 className="text-6xl font-black">Welcome to my playgroud</h1>
-                <p className="my-8 leading-relaxed">
+                <div className="text-5xl font-extrabold ...">
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-400">
+                    Hello Cool kids!
+                  </span>
+                </div>
+                <h1 className="text-6xl font-black uppercase">Welcome to my playgroud</h1>
+                <p className="text-lg my-8 leading-relaxed font-normal">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet earum
                   voluptatibus tempora veniam?{' '}
                 </p>
+                <div className="inline-flex rounded-md shadow">
+                  <Link
+                    to="/profile"
+                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700"
+                  >
+                    More about me!
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="absolute top-0 right-0 flex w-full h-full">
@@ -38,7 +53,11 @@ const HomePage: React.FC<any> = () => {
             </div>
           </div>
           <div className="absolute top-0 right-0 block w-9/12 h-full">
-            <img src={myPic} alt="my_pic" className="object-cover min-w-full h-full" />
+            <img
+              src={myPic}
+              alt="my_pic"
+              className="object-cover min-w-full h-full transition hover:opacity-25 transition-opacity duration-1000 ease-out"
+            />
           </div>
         </div>
       </div>
