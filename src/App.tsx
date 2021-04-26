@@ -1,14 +1,14 @@
-import React from 'react'
+import * as React from 'react'
+import { hot } from 'react-hot-loader/root'
+
 import Routes from './routes'
 // style
 import './styles/output.css'
 
-function App() {
-  return (
-    <>
-      <Routes />
-    </>
-  )
-}
+const App: React.FC<any> = () => (
+  <>
+    <Routes />
+  </>
+)
 
-export default App
+export default hot(App)
