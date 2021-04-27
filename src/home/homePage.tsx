@@ -10,7 +10,7 @@ const HomePage: React.FC<any> = () => {
       <div className="h-screen">
         <div className="relative h-full overflow-hidden bg-yellow-400">
           <div className="absolute z-30 flex w-full h-full">
-            <div className="relative flex items-stretch z-30 text-white py-8 px-4 md:px-6 w-full md:w-5/6">
+            <div className="relative flex items-stretch z-30 text-white py-8 sm:px-4 md:px-6 sm:w-full md:w-5/6">
               <div className="self-center m-4">
                 <div className="font-extrabold sm:text-3xl text-3xl lg:text-5xl">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-400">
@@ -39,8 +39,8 @@ const HomePage: React.FC<any> = () => {
               </div>
             </div>
             <div className="absolute top-0 right-0 flex w-full h-full">
-              <div className="sm:w-full md:w-1/6 xl:w-1/3 h-full bg-yellow-400"></div>
-              <div className="relative sm:w-full md:w-1/6 xl:w-1/3">
+              <div className="w-full md:w-2/3 lg:w-1/6 h-full bg-yellow-400"></div>
+              <div className="relative w-full md:w-2/3 lg:w-1/6">
                 <svg
                   fill="currentColor"
                   viewBox="0 0 100 100"
