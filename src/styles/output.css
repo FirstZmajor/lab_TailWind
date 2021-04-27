@@ -13744,7 +13744,7 @@ video {
 }
 
 .max-h-0 {
-  max-height: 0px;
+  max-height: 0;
 }
 
 .max-h-1 {
@@ -13881,6 +13881,18 @@ video {
 
 .max-h-3\.5 {
   max-height: 0.875rem;
+}
+
+.max-h-1\/4 {
+  max-height: 25%;
+}
+
+.max-h-1\/2 {
+  max-height: 50%;
+}
+
+.max-h-3\/4 {
+  max-height: 75%;
 }
 
 .max-h-full {
@@ -42997,7 +43009,7 @@ video {
   }
 
   .sm\:max-h-0 {
-    max-height: 0px;
+    max-height: 0;
   }
 
   .sm\:max-h-1 {
@@ -43134,6 +43146,18 @@ video {
 
   .sm\:max-h-3\.5 {
     max-height: 0.875rem;
+  }
+
+  .sm\:max-h-1\/4 {
+    max-height: 25%;
+  }
+
+  .sm\:max-h-1\/2 {
+    max-height: 50%;
+  }
+
+  .sm\:max-h-3\/4 {
+    max-height: 75%;
   }
 
   .sm\:max-h-full {
@@ -72115,7 +72139,7 @@ video {
   }
 
   .md\:max-h-0 {
-    max-height: 0px;
+    max-height: 0;
   }
 
   .md\:max-h-1 {
@@ -72252,6 +72276,18 @@ video {
 
   .md\:max-h-3\.5 {
     max-height: 0.875rem;
+  }
+
+  .md\:max-h-1\/4 {
+    max-height: 25%;
+  }
+
+  .md\:max-h-1\/2 {
+    max-height: 50%;
+  }
+
+  .md\:max-h-3\/4 {
+    max-height: 75%;
   }
 
   .md\:max-h-full {
@@ -101233,7 +101269,7 @@ video {
   }
 
   .lg\:max-h-0 {
-    max-height: 0px;
+    max-height: 0;
   }
 
   .lg\:max-h-1 {
@@ -101370,6 +101406,18 @@ video {
 
   .lg\:max-h-3\.5 {
     max-height: 0.875rem;
+  }
+
+  .lg\:max-h-1\/4 {
+    max-height: 25%;
+  }
+
+  .lg\:max-h-1\/2 {
+    max-height: 50%;
+  }
+
+  .lg\:max-h-3\/4 {
+    max-height: 75%;
   }
 
   .lg\:max-h-full {
@@ -130351,7 +130399,7 @@ video {
   }
 
   .xl\:max-h-0 {
-    max-height: 0px;
+    max-height: 0;
   }
 
   .xl\:max-h-1 {
@@ -130488,6 +130536,18 @@ video {
 
   .xl\:max-h-3\.5 {
     max-height: 0.875rem;
+  }
+
+  .xl\:max-h-1\/4 {
+    max-height: 25%;
+  }
+
+  .xl\:max-h-1\/2 {
+    max-height: 50%;
+  }
+
+  .xl\:max-h-3\/4 {
+    max-height: 75%;
   }
 
   .xl\:max-h-full {
@@ -159469,7 +159529,7 @@ video {
   }
 
   .\32xl\:max-h-0 {
-    max-height: 0px;
+    max-height: 0;
   }
 
   .\32xl\:max-h-1 {
@@ -159606,6 +159666,18 @@ video {
 
   .\32xl\:max-h-3\.5 {
     max-height: 0.875rem;
+  }
+
+  .\32xl\:max-h-1\/4 {
+    max-height: 25%;
+  }
+
+  .\32xl\:max-h-1\/2 {
+    max-height: 50%;
+  }
+
+  .\32xl\:max-h-3\/4 {
+    max-height: 75%;
   }
 
   .\32xl\:max-h-full {

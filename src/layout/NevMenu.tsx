@@ -15,7 +15,7 @@ const NevMenu: React.FC<any> = (props) => {
 
   return (
     <>
-      <Disclosure as="nav" className="sticky top-0 bg-yellow-900">
+      <Disclosure as="nav" className="sticky top-0 bg-green-600">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-2 px-4 sm:px-6 lg:px-8">
@@ -55,7 +55,7 @@ const NevMenu: React.FC<any> = (props) => {
                 </div>
                 {/* <div className="hidden md:block">
                   <div className="ml-4 flex items-center md:ml-6">
-                    <button className="bg-yellow-900 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                    <button className="bg-green-600 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">View notifications</span>
                       <BellIcon className="h-6 w-6" aria-hidden="true" />
                     </button>
