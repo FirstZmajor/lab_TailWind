@@ -8,6 +8,7 @@ import myIcon from '../static/icons/sunflower.svg'
 const navigation = [
   { label: 'Home', path: '/' },
   { label: 'Profile', path: '/profile' },
+  { label: 'Play Room', path: '/playroom' },
 ]
 
 const NevMenu: React.FC<any> = (props) => {

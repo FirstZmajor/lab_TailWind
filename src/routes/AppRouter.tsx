@@ -5,6 +5,7 @@ import { Router, Switch, Route } from 'react-router-dom'
 import { history } from './history'
 const NavMenu = React.lazy(() => import('../layout/NevMenu'))
 const Profile = React.lazy(() => import('../profile'))
+const PlayRoom = React.lazy(() => import('../playroom/index'))
 
 export default () => (
   <>
@@ -12,9 +13,8 @@ export default () => (
       <React.Suspense fallback={<div>Loading...</div>}>
         <NavMenu />
         <Switch>
-          <Route exact path="/profile">
-            <Profile />
-          </Route>
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/playroom" component={PlayRoom} />
         </Switch>
       </React.Suspense>
     </Router>

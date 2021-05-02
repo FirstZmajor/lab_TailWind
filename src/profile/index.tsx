@@ -1,3 +1,5 @@
+import Yujin from '../static/images/yujin002.jpg'
+
 const features = [
   {
     name: 'Java Script',
@@ -25,40 +27,53 @@ const features = [
   },
 ]
 
+const myData = {
+  firstName: 'Suphanan',
+  lastName: 'Yolao',
+  nickName: 'First',
+  jobDescrip: 'Frontend Developer',
+  bio: `Firstly I'd like to introduce myself. My name's Suphanan and You can call me First
+  (Yes, that's my nickname 😊) Do you know 16Personallities? my personality type is
+  ISFP-T. Exactly! it's kind of Introvert but sometimes I often hang out with my
+  friend or office mate. I interesting in many things, Basketball, Surf, Scuba diving,
+  Snap Film, and mostly K-POP. I'm a big fan of Girls' Generation and IZ*ONE. I want
+  to thank everybody and I'm so glad that you are touring my Playgrounds.`,
+}
+
 const Profile = () => {
   return (
     <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
-            H!, everyone.
+            Hi!, everyone.
           </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             A better way to let you know me
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
-            cupiditate veritatis in accusamus quisquam.
-          </p>
+          <div className="mt-6 mb-6 text-center ">
+            <p className="mt-2 max-w-2xl text-xl text-gray-500 lg:mx-auto">DREAMLIKE</p>
+            <p className="mt-2 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+              09:01 ────🐶──── 12:18
+            </p>
+            <p className="mt-2 max-w-2xl text-xl text-gray-500 lg:mx-auto">⇆ ◀ ❚❚ ▶ ↻</p>
+          </div>
         </div>
         <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
           <img
-            className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-            src="/sarah-dayan.jpg"
+            className="w-50 h-32 md:w-1/4 md:h-auto md:rounded-none rounded-full mx-auto"
+            src={Yujin}
             alt=""
-            width="384"
-            height="512"
+            // width="384"
+            // height="512"
           />
           <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
             <blockquote>
-              <p className="text-lg font-semibold">
-                “Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy
-                to customize, adapts to any design, and the build size is tiny.”
-              </p>
+              <p className="text-lg font-semibold">"{myData.bio}"</p>
             </blockquote>
             <figcaption className="font-medium">
-              <div className="text-cyan-600">Sarah Dayan</div>
-              <div className="text-gray-500">Staff Engineer, Algolia</div>
+              <div className="text-cyan-600">{myData.firstName + `  ` + myData.lastName}</div>
+              <div className="text-gray-500">{myData.jobDescrip}</div>
             </figcaption>
           </div>
         </figure>
@@ -74,7 +89,7 @@ const Profile = () => {
                     {feature.name}
                   </p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
+                {/* <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd> */}
               </div>
             ))}
           </dl>
